@@ -1,0 +1,78 @@
+<title>Sample Project</title>
+<link rel="stylesheet" type="text/css" href="/index.710e9678.css">
+
+<h1>Project LP</h1>
+
+<form id="ico_spc_approve">
+  <button type="submit">Approve SPC token Transfer</button>
+</form>
+
+<form id="ico_lp_approve">
+  <button type="submit">Approve LP token Transfer</button>
+</form>
+
+<!-- <form id="ico_spc_approve">
+  <button type="submit">Approve LP token Transfer</button>
+</form> -->
+
+<section>
+  <h2>ICO</h2>
+
+  <div>SPC left to buy: <span id="ico_spc_left"></span></div>
+
+  <form id="ico_spc_buy">
+    Buy SPC
+    <input name="eth" value="0.1" autocomplete="off">
+    <button type="submit">Buy</button>
+  </form>
+</section>
+
+<section>
+  <h2>Pool</h2>
+
+  <form id="lp_deposit">
+    Deposit for LP tokens <br>
+    <input name="eth" value="0" autocomplete="off"> ETH<br>
+    <input name="spc" value="0" autocomplete="off"> SPC<br>
+    <button type="submit">Deposit</button>
+
+    <h4>Current Balances</h4>
+    <span id="spc_pool">0 SPC</span><br>
+    <span id="eth_pool">0 ETH</span><br>
+  </form>
+
+  <form id="lp_withdraw">
+    Remove Tiny liquidity (10 ** 7) <br>
+    <button type="submit">Withdraw 10 ** 7 LP tokens</button>
+  </form>
+</section>
+
+<section>
+  <h2>Trade</h2>
+
+  <form id="swap">
+    Trade SPC for ETH <br>
+    <input name="amount_in" value="0" autocomplete="off">
+    <span id="swap_in_label">ETH</span>
+    <small id="switcher" style="text-decoration: underline; cursor: pointer">swap</small>
+    <br>
+    <span id="swap_out_label">0 SPC</span><br>
+    <button type="submit">Trade</button>
+  </form>
+</section>
+
+<script src="/index.379dd93c.js" defer=""></script>
+
+<!-- ICO deployed to: 0x8a02f7910a353cf3669ebD1a10cf9612fA1e4beB
+ICO deployed to: await spaceCoinICO.scToken()  -->
+<p>
+  You can see some of my swaps, add liquidity, transactions here:
+  https://goerli.etherscan.io/address/0x6cbc2d39ba905b44a5876fdbf6c053fa57dfc887#tokentxns
+</p>
+<p>Andriy's wallet: 0x6CbC2d39BA905b44a5876FdBf6C053Fa57dfc887</p>
+<p>SPC token address: 0x48E155918808A0F26B962402B7c2566F14DdE545</p>
+<p>LP Address on gnosis: 0x5435f9b702a33eF6AF73803bda083dE117471e94"</p>
+<p>Router Address on gnosis: 0x772057Eb52bE4D69D589212aA4C2D59FbE275E95</p>
+
+<h2>Working Image Example below</h2>
+<img src="/example.3f97d3ad.png">
