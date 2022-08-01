@@ -5,10 +5,10 @@
 - generally speaking I made the logic more verbose so it's easier to understand for me and for auditors so keep in mind that I preferred readability over gas savings.
 - I did my best to simplify uniswap concepts by writing out the constant product formulas, geometric mean, etc in an easy to read way
 
-## Main Commands
+## Main Commands (to see tests)
 
 - `npm i`
-- `npx hardat compile`
+- `npx hardhat compile`
 - `npx hardhat test`
 
 ## Overview
