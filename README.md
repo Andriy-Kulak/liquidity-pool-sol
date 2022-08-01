@@ -1,4 +1,5 @@
-# Liquidity Pool
+# Liquidity Pool (Solidity Smart Contract w/ Hardhat)
+
 - this is my personal implementation of decnetralized exchange using Liquidy Pool and Swaps inspired by Uniswap V2 (reference)[https://uniswap.org/blog/uniswap-v2].
 - The main difference is that my code is only meant to swap ETH with one Token (called `SPC`), while in Uniswap, it is possible to Swap with any number of combinations. Also, uniswap has flash swaps (for trading bots) while I opted to leave this out to reduce complexity a bit.
 - generally speaking I made the logic more verbose so it's easier to understand for me and for auditors so keep in mind that I preferred readability over gas savings.
@@ -11,6 +12,7 @@
 - `npx hardhat test`
 
 ## Overview
+
 - in order for a decentralized exchange to work like Uniswap, we need a set of users to add/remove funds liquidity pool. They are incentivized with fees from trades (aka `swaps`).
 - when Liquidty Providers add liquidity, they get LP tokens to keep track of their contribution. When they want to cash in on fees from transactions and back their funds, they remove liquidty by burning tokens.
 - Once there is any liquidty, people can execute trades using `swap` method
@@ -73,10 +75,10 @@ for all of these functions, user needs to approve the router to send over SPC fu
 - I spent a lot of time covering the important test cases of business
 - There are some less important `require` checks that are not tested like for money and eth transfers. I didn't have time to test those and I wasnt' sure how to fail a transfer or an eth trasaction very easily. and I didn't test all branches on sqrRoot method since I copied it from uniswap
 
-
 #### Deploy Script
 
 - `npx hardhat run --network goerli scripts/deploy.ts --show-stack-traces`
 
 #### Updated Settings I use Personally
+
 - this repo is configured with hardhat template with prettier, eslint, vscode config, tsconfig. These are mostly pre-defined by hardhat template and make it very easy to start working and deploy contracts
