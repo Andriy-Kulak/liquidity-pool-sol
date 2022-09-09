@@ -37,8 +37,8 @@ for all of these functions, user needs to approve the router to send over SPC fu
 ### Live Contract References:
 
 Liquidty Pool Address: [0x5435f9b702a33eF6AF73803bda083dE117471e94](https://goerli.etherscan.io/address/0x5435f9b702a33eF6AF73803bda083dE117471e94)
-const routerAddress = [0x772057Eb52bE4D69D589212aA4C2D59FbE275E95](https://goerli.etherscan.io/address/0x772057Eb52bE4D69D589212aA4C2D59FbE275E95)
-const spcAddress = [0x48E155918808A0F26B962402B7c2566F14DdE545](https://goerli.etherscan.io/address/0x48E155918808A0F26B962402B7c2566F14DdE545)
+Router Contract address: [0x772057Eb52bE4D69D589212aA4C2D59FbE275E95](https://goerli.etherscan.io/address/0x772057Eb52bE4D69D589212aA4C2D59FbE275E95)
+ERC 20 SPC Address: [0x48E155918808A0F26B962402B7c2566F14DdE545](https://goerli.etherscan.io/address/0x48E155918808A0F26B962402B7c2566F14DdE545)
 
 ### LiquidityPool.sol (LP Contract)
 
